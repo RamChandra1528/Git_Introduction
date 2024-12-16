@@ -1,0 +1,201 @@
+### Git Command Examples
+
+#### **1. `add`**  
+Add files to the staging area.  
+```bash
+git add file.txt  # Add a specific file
+git add .         # Add all changes in the current directory
+```
+
+#### **2. `am`**  
+Apply patches from a mailbox.  
+```bash
+git am < patch.mbox  # Apply patches in mbox format
+```
+
+#### **3. `archive`**  
+Create an archive of files from the repository.  
+```bash
+git archive --format=zip HEAD > archive.zip
+```
+
+#### **4. `bisect`**  
+Find the commit that introduced a bug using binary search.  
+```bash
+git bisect start
+git bisect bad  # Mark the current commit as bad
+git bisect good <commit>  # Mark an older commit as good
+```
+
+#### **5. `branch`**  
+List, create, or delete branches.  
+```bash
+git branch             # List branches
+git branch new-branch  # Create a new branch
+git branch -d old-branch  # Delete a branch
+```
+
+#### **6. `bundle`**  
+Move objects and references by archive.  
+```bash
+git bundle create repo.bundle --all
+git clone repo.bundle cloned-repo
+```
+
+#### **7. `checkout`**  
+Switch branches or restore working tree files.  
+```bash
+git checkout main       # Switch to the 'main' branch
+git checkout -- file.txt  # Discard changes to a file
+```
+
+#### **8. `cherry-pick`**  
+Apply changes from specific commits.  
+```bash
+git cherry-pick <commit-hash>
+```
+
+#### **9. `clean`**  
+Remove untracked files.  
+```bash
+git clean -f   # Forcefully clean untracked files
+```
+
+#### **10. `clone`**  
+Clone a repository.  
+```bash
+git clone https://github.com/user/repo.git
+```
+
+#### **11. `commit`**  
+Record changes to the repository.  
+```bash
+git commit -m "Commit message"
+```
+
+#### **12. `describe`**  
+Give a human-readable name to an object.  
+```bash
+git describe
+```
+
+#### **13. `diff`**  
+Show differences between commits or working trees.  
+```bash
+git diff HEAD  # Compare working tree with the last commit
+```
+
+#### **14. `fetch`**  
+Download objects and refs from another repository.  
+```bash
+git fetch origin
+```
+
+#### **15. `gc`**  
+Cleanup unnecessary files.  
+```bash
+git gc
+```
+
+#### **16. `init`**  
+Create a new Git repository.  
+```bash
+git init
+```
+
+#### **17. `log`**  
+Show commit logs.  
+```bash
+git log
+```
+
+#### **18. `merge`**  
+Combine branches.  
+```bash
+git merge feature-branch
+```
+
+#### **19. `pull`**  
+Fetch and merge changes from another repository.  
+```bash
+git pull origin main
+```
+
+#### **20. `push`**  
+Push commits to a remote repository.  
+```bash
+git push origin main
+```
+
+#### **21. `rebase`**  
+Reapply commits on top of another base tip.  
+```bash
+git rebase main
+```
+
+#### **22. `reset`**  
+Reset current HEAD to a specified state.  
+```bash
+git reset --hard HEAD~1  # Reset to the previous commit
+```
+
+#### **23. `restore`**  
+Restore working tree files.  
+```bash
+git restore file.txt
+```
+
+#### **24. `revert`**  
+Revert specific commits.  
+```bash
+git revert <commit-hash>
+```
+
+#### **25. `rm`**  
+Remove files from the working directory and index.  
+```bash
+git rm file.txt
+```
+
+#### **26. `status`**  
+Show the status of the working tree.  
+```bash
+git status
+```
+
+#### **27. `stash`**  
+Save changes for later.  
+```bash
+git stash
+```
+
+#### **28. `tag`**  
+Create, list, or delete tags.  
+```bash
+git tag v1.0.0
+git tag -d v1.0.0
+```
+
+#### **29. `switch`**  
+Switch branches.  
+```bash
+git switch new-branch
+```
+
+#### **30. `worktree`**  
+Manage multiple working trees.  
+```bash
+git worktree add ../new-tree main
+
+
+
+echo "# Git_Introduction" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RamChandra1528/Git_Introduction.git
+git push -u origin main
+
+
+add new file 
